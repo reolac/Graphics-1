@@ -1,0 +1,35 @@
+<X3D>
+	<Scene>	
+		<Transform>
+			<Shape>
+				<Box size='4 4 4'/>
+				<Appearance>
+					<Material diffuseColor='0 1 0'/>
+				</Appearance>
+			</Shape>
+		</Transform>	
+		
+		<Transform translation="-2.1 0 0" scale="1 1 1" rotation="0 1 0 4.7">
+			<Shape>
+				<Text string="Michael">
+				<FontStyle justify="middle"/>
+				</Text>
+				<Appearance>
+					<Material diffuseColor='1 0 0'/>
+				</Appearance>
+			</Shape>		
+		</Transform>
+		
+		<Transform translation="0 0 -2.1" scale="1 1 1" rotation="0 1 0 -9.4">
+			<Shape>
+				<Text string="Smith">
+				<FontStyle justify="middle"/>
+				</Text>
+				<Appearance>
+					<Material diffuseColor='1 0 0'/>
+				</Appearance>
+			</Shape>		
+		</Transform>
+		
+	</Scene>	
+</X3D>	

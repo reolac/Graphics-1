@@ -1,0 +1,14 @@
+<X3D>
+	<Scene>
+		
+		<Shape>
+			<Box  size='3 2 1'/>
+			<Appearance>
+				<Material diffuseColor='0 2 0'/>
+			</Appearance>
+		</Shape>
+		
+		
+		
+	</Scene>
+</X3D>

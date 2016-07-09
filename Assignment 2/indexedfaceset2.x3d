@@ -1,0 +1,27 @@
+<X3D>
+	<Scene>
+		
+		<Shape>
+			<IndexedFaceSet solid="false"
+							colorPerVertex="true"
+				coordIndex="0 1 2 3 -1
+							4 5 6 7 -1
+							8 9 10 11 -1" >
+				<Coordinate
+					point= "1 0 0, 0 1 0, 0 0 1,
+							1 1 1, 1 1 1, 1 1 1,
+							2 2 2, 2 2 2, 2 2 2,"/>
+							 
+				<Color color= "	1 0 0,1 0 0, 1 1 0,
+								0 1 0, 0 1 0, 0 1 1,
+								0 0 1, 0 0 1, 1 1 1,"/>
+			</IndexedFaceSet>
+			<Appearance>
+				<Material diffuseColor='0 2 0'/>
+			</Appearance>
+		</Shape>
+		
+		
+		
+	</Scene>
+</X3D>

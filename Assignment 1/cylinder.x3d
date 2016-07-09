@@ -1,0 +1,12 @@
+<X3D>
+	<Scene>
+		
+		<Shape>
+			<Cylinder size='2 3 1'/>
+			<Appearance>
+				<Material diffuseColor='2 0 0'/>
+			</Appearance>
+		</Shape>
+		
+	</Scene>
+</X3D>

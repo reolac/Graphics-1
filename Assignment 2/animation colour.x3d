@@ -1,0 +1,62 @@
+<X3D>
+	<Scene>
+		
+		<Transform DEF="Ball">
+		<Shape>
+			<Sphere/>
+			<Appearance>
+				<Material DEF="BallMaterial" diffuseColor='0 0 2'/>
+			</Appearance>
+		</Shape>
+		</Transform>
+	
+	
+	<PositionInterpolator DEF="pos"
+			key = 		"0.0
+						 0.5
+						 1.0"
+						 
+			keyValue = 	"1 1 1
+						 1 5 1
+						 1 1 1"/>
+						 
+	<ColorInterpolator DEF="col"
+			key =		"0.0
+						 0.5
+						 1.0"
+			 
+			keyValue = 	"1 0 0
+						 0 1 0
+						 1 0 0"/>
+						 
+	 <TimeSensor DEF="Clock" loop="true" cycleInterval="3"/>
+	 
+	 <ROUTE 	fromNode="Clock"
+				fromField="fraction_changed"
+				toNode="pos"
+				toField="set_fraction" />
+	
+	 <ROUTE		fromNode="pos"
+				fromField="value_changed"
+				toNode="Ball"
+				toField="set_translation"/>		
+					 
+	 <ROUTE 	fromNode="Clock"
+				fromField="fraction_changed"
+				toNode="col"
+				toField="set_fraction" />
+	
+	 <ROUTE		fromNode="col"
+				fromField="value_changed"
+				toNode="BallMaterial"
+				toField="diffuseColor"/>
+	 
+		
+
+						 
+						 
+						 
+						 
+						 
+	</Scene>					 
+</X3D>
